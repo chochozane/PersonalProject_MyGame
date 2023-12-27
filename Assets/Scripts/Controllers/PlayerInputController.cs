@@ -7,7 +7,7 @@ public class PlayerInputController : TopDownCharacterController
 {
     public void OnMove(InputValue value)
     {
-        Vector2 moveInput = value.Get<Vector2>().normalized;
+        Vector2 moveInput = value.Get<Vector2>().normalized; // normalized 하는 이유는 대각선으로 움직일 때 빨라지는 걸 막기 위해 !
         CallMoveEvent(moveInput);
     }
 
@@ -21,5 +21,10 @@ public class PlayerInputController : TopDownCharacterController
         {
             CallLookEvent(newAim);
         }
+    }
+
+    public void OnAttack(InputValue value)
+    {
+        Debug.Log("OnAttack" + value.ToString());
     }
 }
