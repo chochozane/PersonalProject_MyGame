@@ -16724,6 +16724,7 @@ GameObject:
   - component: {fileID: 1633392560}
   - component: {fileID: 1633392559}
   - component: {fileID: 1633392561}
+  - component: {fileID: 1633392562}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -16886,6 +16887,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterRenderer: {fileID: 2051770815}
+--- !u!114 &1633392562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633392554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f302fd3d40300454d805981c5274ad17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 2051770816}
 --- !u!1 &2051770813
 GameObject:
   m_ObjectHideFlags: 0
@@ -16896,6 +16910,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2051770814}
   - component: {fileID: 2051770815}
+  - component: {fileID: 2051770816}
   m_Layer: 0
   m_Name: SpriteRenderer
   m_TagString: Untagged
@@ -16970,3 +16985,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2051770816
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051770813}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 227408656aa036d42ad1aa76e305b2ce, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
