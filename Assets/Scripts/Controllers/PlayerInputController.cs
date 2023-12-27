@@ -14,7 +14,7 @@ public class PlayerInputController : TopDownCharacterController
 
     public void OnLook(InputValue value)
     {
-        Vector2 newAim = value.Get<Vector2>().normalized;
+        Vector2 newAim = value.Get<Vector2>();
         Vector2 worldPos = Camera.main.ScreenToWorldPoint(newAim); // 좌표를 Screen 에서 World(게임상의 좌표) 로 변환 !
         newAim = (worldPos - (Vector2)transform.position).normalized; // 캐릭터가 마우스를 바라보는 방향
 
