@@ -13,7 +13,6 @@ public class TopDownMovement : MonoBehaviour
     {
         _controller = GetComponent<TopDownCharacterController>();
         _rigidbody = GetComponent<Rigidbody2D>();
-
     }
 
     private void Start()

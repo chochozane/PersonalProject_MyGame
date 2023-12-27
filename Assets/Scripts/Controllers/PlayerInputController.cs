@@ -9,7 +9,6 @@ public class PlayerInputController : TopDownCharacterController
     {
         Vector2 moveInput = value.Get<Vector2>().normalized;
         CallMoveEvent(moveInput);
-
     }
 
     public void OnLook(InputValue value)
@@ -21,7 +20,6 @@ public class PlayerInputController : TopDownCharacterController
         if (newAim.magnitude > 0f)
         {
             CallLookEvent(newAim);
-
         }
     }
 }
