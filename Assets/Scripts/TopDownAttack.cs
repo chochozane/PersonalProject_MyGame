@@ -21,5 +21,8 @@ public class TopDownAttack : MonoBehaviour
         _animator.SetTrigger("Attack");
     }
 
-
+    private void Hit()
+    {
+        _animator.SetTrigger("IsHit");
+    }
 }
