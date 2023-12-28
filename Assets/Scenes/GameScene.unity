@@ -1838,8 +1838,12 @@ GameObject:
   - component: {fileID: 459158664}
   - component: {fileID: 459158665}
   - component: {fileID: 459158666}
+  - component: {fileID: 459158667}
+  - component: {fileID: 459158668}
+  - component: {fileID: 459158670}
+  - component: {fileID: 459158669}
   m_Layer: 6
-  m_Name: Enemy
+  m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1933,6 +1937,64 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &459158667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459158663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa07c6e8f81c6f4ba0c60c6778ab63e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseStats:
+    statsChangeType: 2
+    maxHealth: 5
+    speed: 2
+    attackSO: {fileID: 11400000, guid: 5cd2eb7166a938742b5f7b418ad4baa1, type: 2}
+  statsModifier: []
+--- !u!114 &459158668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459158663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c7db27a3360f5498168486b67ea360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterRenderer: {fileID: 1608184218}
+--- !u!114 &459158669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459158663}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f302fd3d40300454d805981c5274ad17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &459158670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459158663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aceb672205b4c4d45b1c8c4b9c5435d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followRange: 20
+  targetTag: Player
+  characterRenderer: {fileID: 1608184218}
 --- !u!1 &464583531
 GameObject:
   m_ObjectHideFlags: 0
@@ -14289,6 +14351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7619d7dc178316c46a1e631a3ef48ae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerTag: Player
 --- !u!4 &962543200
 Transform:
   m_ObjectHideFlags: 0
@@ -17250,7 +17313,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: bf24b189dc6ea5240874f58b6cfbb41b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17303,7 +17366,7 @@ GameObject:
   - component: {fileID: 1633392564}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17476,7 +17539,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f302fd3d40300454d805981c5274ad17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 2051770816}
 --- !u!114 &1633392563
 MonoBehaviour:
   m_ObjectHideFlags: 0

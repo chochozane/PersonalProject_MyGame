@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class AnimationController : MonoBehaviour
 {
-    private PlayerInputController controller;
+    private PlayerInputController controller; // 여기서 TopDownCharacterController 로 controller 가져왔다가 에러떴네 ;; 휴 조심하자
 
-    [SerializeField] private Animator anim;
+    private Animator anim;
 
     private void Awake()
     {
         controller = GetComponent<PlayerInputController>();
+        anim = GetComponentInChildren<Animator>();
     }
 
-    // Start is called before the first frame update
     private void Start()
     {
         controller.OnMoveEvent += AnimState;

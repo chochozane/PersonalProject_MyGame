@@ -12,6 +12,13 @@ public class TopDownCharacterController : MonoBehaviour
     protected bool IsAttacking { get; set; }
     protected bool IsLookingAround { get; set; }
 
+    protected CharacterStatsHandler Stats { get; private set; }
+
+    protected virtual void Awake()
+    {
+        Stats = GetComponent<CharacterStatsHandler>();
+    }
+
     public void CallMoveEvent(Vector2 direction)
     {
         OnMoveEvent?.Invoke(direction);

@@ -7,10 +7,10 @@ public class TopDownEnemyController : TopDownCharacterController
     private GameManager gameManager;
     protected Transform ClosestTarget { get; private set; }
 
-    //protected override void Awake()
-    //{
-       // base.Awake();
-    //}
+    protected override void Awake()
+    {
+        base.Awake();
+    }
 
     protected virtual void Start()
     {

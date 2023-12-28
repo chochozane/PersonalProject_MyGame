@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy_idle
+  m_Name: Slime_idle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -22,15 +22,15 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: 21300000, guid: bf24b189dc6ea5240874f58b6cfbb41b, type: 3}
-    - time: 0.1
+    - time: 0.05
       value: {fileID: 21300000, guid: 6e8d8ea8f289bfd4b9fd0e3ef6115b49, type: 3}
-    - time: 0.2
+    - time: 0.1
       value: {fileID: 21300000, guid: f21df5cc833568544a8d34b6b6c02a75, type: 3}
-    - time: 0.3
+    - time: 0.15
       value: {fileID: 21300000, guid: 7715eda29881000429827c4171cf4eb6, type: 3}
-    - time: 0.4
+    - time: 0.2
       value: {fileID: 21300000, guid: 98672fb21d0f0af4a858068b6adabf13, type: 3}
-    - time: 0.5
+    - time: 0.25
       value: {fileID: 21300000, guid: b056e32eaf55f4540ab09d9263acc913, type: 3}
     attribute: m_Sprite
     path: 
@@ -65,7 +65,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.55
+    m_StopTime: 0.3
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
