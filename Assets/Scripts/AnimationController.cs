@@ -12,6 +12,7 @@ public class AnimationController : MonoBehaviour
     {
         controller = GetComponent<PlayerInputController>();
     }
+
     // Start is called before the first frame update
     private void Start()
     {
