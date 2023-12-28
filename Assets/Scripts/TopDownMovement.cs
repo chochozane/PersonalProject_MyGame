@@ -4,6 +4,7 @@ public class TopDownMovement : MonoBehaviour
 {
     private TopDownCharacterController _controller;
     private Rigidbody2D _rigidbody;
+    private CharacterStatsHandler _stats;
 
     [SerializeField] private SpriteRenderer characterRenderer;
 
@@ -13,6 +14,7 @@ public class TopDownMovement : MonoBehaviour
     {
         _controller = GetComponent<TopDownCharacterController>();
         _rigidbody = GetComponent<Rigidbody2D>();
+        _stats = GetComponent<CharacterStatsHandler>();
     }
 
     private void Start()
@@ -32,7 +34,7 @@ public class TopDownMovement : MonoBehaviour
 
     private void ApplyMovement(Vector2 direction)
     {
-        direction *= 5; // 속도 up
+        direction *= _stats.CurrentStats.speed; // 속도 up
         _rigidbody.velocity = direction;
     }
 
