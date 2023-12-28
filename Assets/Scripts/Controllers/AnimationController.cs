@@ -23,4 +23,9 @@ public class AnimationController : MonoBehaviour
     {
         anim.SetBool("Move", direction.magnitude > 0f);
     }
+
+    private void Hit() //todo Hit()
+    {
+        anim.SetTrigger("IsHit");
+    }
 }
