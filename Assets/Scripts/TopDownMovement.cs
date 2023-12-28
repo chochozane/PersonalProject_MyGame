@@ -8,6 +8,7 @@ public class TopDownMovement : MonoBehaviour
 
     [SerializeField] private SpriteRenderer characterRenderer;
     [SerializeField] private SpriteRenderer _characterWeaponRenderer;
+    //[SerializeField] private Transform _characterWeaponPivot;
 
     private Vector2 _movementDirection = Vector2.zero; // 이걸 활용해서 이동 구현 !
     private Vector2 _knockback = Vector2.zero;
@@ -66,10 +67,9 @@ public class TopDownMovement : MonoBehaviour
             _characterWeaponRenderer.flipX = true;
 
             // todo 무기의 x좌표도 flip 시키고 싶은데..
-            Vector3 newPos = new Vector3(-0.5f, -0.04f, 0f);
+            Vector3 newPos = new Vector3(-1.0f, 0f, 0f);
             _characterWeaponRenderer.transform.position = newPos;
-
-            
+            //_characterWeaponRenderer.transform.position = newPos;
 
         }
 
