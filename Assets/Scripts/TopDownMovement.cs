@@ -7,6 +7,7 @@ public class TopDownMovement : MonoBehaviour
     private CharacterStatsHandler _stats;
 
     [SerializeField] private SpriteRenderer characterRenderer;
+    private SpriteRenderer _characterWeaponRenderer;
 
     private Vector2 _movementDirection = Vector2.zero; // 이걸 활용해서 이동 구현 !
 
@@ -15,6 +16,7 @@ public class TopDownMovement : MonoBehaviour
         _controller = GetComponent<TopDownCharacterController>();
         _rigidbody = GetComponent<Rigidbody2D>();
         _stats = GetComponent<CharacterStatsHandler>();
+        _characterWeaponRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void Start()
@@ -43,11 +45,13 @@ public class TopDownMovement : MonoBehaviour
         if (_movementDirection.x < 0f)
         {
             characterRenderer.flipX = true;
+            _characterWeaponRenderer.flipX = true;
         }
 
         if (_movementDirection.x >= 0f)
         {
             characterRenderer.flipX = false;
+            _characterWeaponRenderer.flipX = false;
         }
     }
 }
