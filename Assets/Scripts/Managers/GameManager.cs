@@ -26,4 +26,9 @@ public class GameManager : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag(playerTag).transform; // todo FindGameObjectWithTag 이 친구 연산이 꽤 헤비한 걸로 아는데 다른걸로 대체할 수 있나 생각해보기
 
     }
+
+    public void ReturnToIntro()
+    {
+        SceneManager.LoadScene("IntroScene");
+    }
 }
