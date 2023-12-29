@@ -6,7 +6,8 @@ public class Teleport : MonoBehaviour
 
     public GameObject toObj; // 텔레포트할 위치
 
-    public GameObject msgPopup;
+    public GameObject teleportMsgPopup;
+    public GameObject buttonMsgPopup;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,17 +21,18 @@ public class Teleport : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            msgPopup.SetActive(true);
+            teleportMsgPopup.SetActive(true);
 
             if (Input.GetMouseButtonDown(1)) // 마우스 우클릭 시
             {
                 targetObj.transform.position = toObj.transform.position;
+                buttonMsgPopup.SetActive(true);
             }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        msgPopup.SetActive(false);
+        teleportMsgPopup.SetActive(false);
     }
 
 

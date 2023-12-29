@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawnManager : MonoBehaviour
@@ -13,8 +11,5 @@ public class EnemySpawnManager : MonoBehaviour
         {
             Instantiate(enemyPrefab, new Vector3(i *1.85f, 0, 0), Quaternion.identity);
         }
-
-
     }
-
 }
