@@ -51,12 +51,18 @@ delegate 를 이해하는 데에 너무 많은 시간을 쏟아버려서<br>
 ### ✨Things i did :
 - 필수요구사항
   - ✅ 인트로 씬 구성
-    - UI 구성 / 시작버튼 추가
+    - UI 구성 / 시작버튼 추가<br>
+      ![image](https://github.com/chochozane/PersonalProject_MyGame/assets/130233619/f0f64fb7-3d1d-44b4-9d40-048ed744ca92)
+
   - ✅ 자유 게임 만들기
-    - 전환 된 씬에서는 본인이 만들어보고 싶은 게임을 시작
+    - 전환 된 씬에서는 본인이 만들어보고 싶은 게임을 시작<br>
+      ![image](https://github.com/chochozane/PersonalProject_MyGame/assets/130233619/f6a36b00-3691-44d7-a163-a1a88f0db2fc)
       - Player 의 움직임은 InputSystem 활용
-      - 카메라 Player 를 따라가도록 하는 기능은 Cinemachine 활용
-      - Teleport 구현(사다리)
+      - Player 와 Enemy(Slime) 애니메이션 구현
+      - 카메라가 Player 를 따라가도록 하는 기능은 Cinemachine 활용
+      - 특정 위치에서 Teleport 기능 구현(사다리)<br>
+        
+
 
 - 선택요구사항
   - 오브젝트 폴링
